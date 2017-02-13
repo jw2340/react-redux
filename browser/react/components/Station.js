@@ -13,8 +13,8 @@ const DUMMY_CURRENT_SONG = {};
 const DUMMY_IS_PLAYING = false;
 const DUMMY_TOGGLE_ONE = function () {};
 
-export default function () {
-
+export default function (props) {
+  console.log(props);
   return(
     <div>
       {/*TODO fill this in with given name*/}
