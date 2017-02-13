@@ -1,5 +1,5 @@
 import {connect} from 'react-redux';
-import Stations from '../components/stations';
+import Stations from '../components/Stations';
 
 const convertSongsToStations = (songsArray) => {
   let stationsObj = {};

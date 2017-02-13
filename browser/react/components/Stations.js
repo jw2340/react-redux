@@ -13,7 +13,7 @@ export default function(props) {
         genres.map(genre => {
           return (
             <div className="list-group-item" key={genre}>
-              <Link to={'/albums'}>{genre}</Link>
+              <Link to={`/stations/${genre}`}>{genre}</Link>
             </div>
           );
         })
