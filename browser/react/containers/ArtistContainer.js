@@ -6,6 +6,7 @@ import {connect} from 'react-redux';
 
 import {toggleSong} from '../action-creators/player';
 
+// *question where do we find the children when we console.log(props) in Artist.js
 const mapStateToProps = (state, ownProps) => {
   return Object.assign({
     children: ownProps.children
@@ -29,37 +30,3 @@ const mapDispatchToProps = (dispatch, ownProps) => {
 }
 
 export default connect(mapStateToProps, mapDispatchToProps)(Artist);
-
-
-/*export default class extends Component {
-
-  constructor() {
-    super();
-    this.state = store.getState();
-  }
-
-  componentDidMount() {
-    this.unsubscribe = store.subscribe(() => {
-      this.setState(store.getState());
-    });
-  }
-
-  componentWillUnmount() {
-    this.unsubscribe();
-  }
-
-  toggle(song, list) {
-    store.dispatch(toggleSong(song, list));
-  }
-
-  render() {
-    return (
-      <Artist
-        {...this.state.player}
-        selectedArtist={this.state.artists.selected}
-        toggleOne={this.toggle}
-        children={this.props.children} />
-    );
-  }
-
-}*/

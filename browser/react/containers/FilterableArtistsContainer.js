@@ -5,6 +5,7 @@ import {connect} from 'react-redux';
 
 //*question: is there a way to refactor this so
 //we don't pass a class into the arguments for connect?
+// render another component that renders two dumb components
 const mapStateToProps = (state, ownProps) => {
   return {
     artists: state.artists.list
